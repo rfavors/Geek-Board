@@ -1,0 +1,22 @@
+# Coolify deployment configuration
+# This file contains deployment instructions for Coolify
+
+# Build configuration
+BUILD_COMMAND=npm run build
+BUILD_DIRECTORY=dist
+
+# Environment variables (set these in Coolify dashboard)
+# VITE_SUPABASE_URL=your_supabase_url
+# VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+# Port configuration
+PORT=80
+
+# Health check
+HEALTH_CHECK_PATH=/
+
+# Deployment notes:
+# 1. Set environment variables in Coolify dashboard
+# 2. Ensure Supabase is configured
+# 3. The app will be available on port 80
+# 4. Static files are served with proper caching headers
